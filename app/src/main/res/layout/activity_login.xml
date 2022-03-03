@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/bg_login" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="#B9000000"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="@id/imageView" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:flow_verticalBias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.602" />
+
+    <EditText
+        android:id="@+id/EmailAddress"
+        android:text="john.doe@email.com"
+        android:textStyle="italic"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingHorizontal="10dp"
+        android:textSize="20dp"
+        android:ems="10"
+        android:background="#3EFFFFFF"
+        android:inputType="textEmailAddress"
+        android:minHeight="30dp"
+        android:minWidth="250dp"
+        app:layout_constraintBottom_toTopOf="@id/Password"
+        app:layout_constraintEnd_toEndOf="@id/discover"
+        app:layout_constraintStart_toStartOf="@id/discover"
+        app:layout_constraintTop_toTopOf="@id/view" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="7dp"
+        app:layout_constraintEnd_toStartOf="@id/EmailAddress"
+        app:layout_constraintTop_toTopOf="@id/EmailAddress"
+        app:layout_constraintBottom_toBottomOf="@id/EmailAddress"
+        tools:src="@drawable/user_2"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="7dp"
+        app:layout_constraintEnd_toStartOf="@id/Password"
+        app:layout_constraintTop_toTopOf="@id/Password"
+        app:layout_constraintBottom_toBottomOf="@id/Password"
+        tools:src="@drawable/password_icon"
+        />
+
+    <EditText
+        android:id="@+id/Password"
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="10dp"
+        android:ems="10"
+        android:minHeight="35dp"
+        android:minWidth="250dp"
+        android:textColor="@color/white"
+        android:background="#3EFFFFFF"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@id/register"
+        app:layout_constraintEnd_toEndOf="@id/text"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@id/view"
+        app:layout_constraintTop_toBottomOf="@id/EmailAddress"
+        tools:ignore="TouchTargetSizeCheck" />
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Password"
+        android:text="Forgot your password?"
+        android:textColor="#8E9A9A"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="12dp"
+        android:textSize="16dp"
+        />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/forgot_password"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="364dp" />
+    <View
+        android:id="@id/text"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/view"/>
+
+    <TextView
+        android:id="@+id/discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/text"
+        app:layout_constraintEnd_toEndOf="@id/text"
+        app:layout_constraintStart_toStartOf="@id/text"
+        android:paddingHorizontal="35dp"
+        android:text="Discover History Around you."
+        android:textColor="@color/teal_200"
+        android:textAlignment="viewStart"
+        android:textSize="55dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
