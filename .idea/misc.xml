@@ -5,9 +5,13 @@
       <map>
         <entry key="..\:/Users/Asus/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.227" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.227" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/main_icon.xml" value="0.137" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/password_final.xml" value="0.137" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/rounded_corners.xml" value="0.137" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/rounded_full_opacity.xml" value="0.137" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/user_final.xml" value="0.137" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_login2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_maps.xml" value="0.176" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/appbar.xml" value="0.2" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/item_location.xml" value="0.25416666666666665" />
