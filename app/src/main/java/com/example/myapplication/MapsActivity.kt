@@ -26,28 +26,28 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         binding = ActivityMapsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//
-//        listView = findViewById(R.id.listview)
-//        val coordList = ArrayList<String>()
-//        val sydney = "Sydney"
-//        val gymn56 = "Gymnasium 56"
-//        val koktobe = "Koktobe"
-//        val visitAl = "Visit Almaty Hiking trail"
-//        val samuraiSushi = "Samurai Sushi"
-//
-//        coordList.add(sydney)
-//        coordList.add(gymn56)
-//        coordList.add(koktobe)
-//        coordList.add(visitAl)
-//        coordList.add(samuraiSushi)
-//
-//        val arrayAdapter: ArrayAdapter<*>
-//        arrayAdapter = ArrayAdapter(
-//            this,
-//            android.R.layout.simple_list_item_1, coordList
-//        )
-//        listView.adapter = arrayAdapter
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+
+        listView = findViewById(R.id.listview)
+        val coordList = ArrayList<String>()
+        val sydney = "Sydney"
+        val gymn56 = "Gymnasium 56"
+        val koktobe = "Koktobe"
+        val visitAl = "Visit Almaty Hiking trail"
+        val samuraiSushi = "Samurai Sushi"
+
+        coordList.add(sydney)
+        coordList.add(gymn56)
+        coordList.add(koktobe)
+        coordList.add(visitAl)
+        coordList.add(samuraiSushi)
+
+        val arrayAdapter: ArrayAdapter<*>
+        arrayAdapter = ArrayAdapter(
+            this,
+            android.R.layout.simple_list_item_1, coordList
+        )
+        listView.adapter = arrayAdapter
+//         Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)

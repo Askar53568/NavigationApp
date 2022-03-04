@@ -60,7 +60,7 @@
         app:layout_constraintEnd_toStartOf="@id/EmailAddress"
         app:layout_constraintTop_toTopOf="@id/EmailAddress"
         app:layout_constraintBottom_toBottomOf="@id/EmailAddress"
-        tools:src="@drawable/user_2"
+        tools:src="@drawable/user_final"
         />
     <ImageView
         android:layout_width="40dp"
@@ -69,7 +69,7 @@
         app:layout_constraintEnd_toStartOf="@id/Password"
         app:layout_constraintTop_toTopOf="@id/Password"
         app:layout_constraintBottom_toBottomOf="@id/Password"
-        tools:src="@drawable/password_icon"
+        tools:src="@drawable/password_final"
         />
 
     <EditText

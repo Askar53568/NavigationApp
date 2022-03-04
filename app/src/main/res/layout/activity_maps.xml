@@ -4,8 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapsActivity">
-
+    tools:context=".MapsActivity"
+    >
+    <include layout="@layout/appbar"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
@@ -14,11 +23,11 @@
         app:layout_constraintBottom_toTopOf="@id/listview"
         app:layout_constraintEnd_toStartOf="@id/listview"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
         tools:context=".MapsActivity"
-        tools:layout_editor_absoluteX="-16dp" />
-
-    <androidx.recyclerview.widget.RecyclerView
+        tools:layout_editor_absoluteX="-16dp"
+        tools:ignore="NotSibling" />
+    <ListView
         android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -26,5 +35,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/map"
         tools:listitem="@layout/item_location" />
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/listview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/map"-->
+<!--        tools:listitem="@layout/item_location" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
